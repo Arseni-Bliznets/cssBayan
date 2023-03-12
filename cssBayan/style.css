@@ -95,6 +95,12 @@ img {
 .accordion-item__input:checked ~ .accordion-item__content img{
     max-height: 100vh;
 }
+.accordion-item__content:hover img{
+    max-height: 100vh;
+}
+.accordion-item__content:hover{
+    max-height: 100vh;
+}
 /* иконка */
 .accordion:hover .arrow{
     display: block;
@@ -107,5 +113,89 @@ img {
 }
 .accordion-item__trigger:hover ~ .accordion-item__content .arrow{
         transform: rotate(180deg);
+    }
+}
+@media (min-width:820px) and (max-width:1439.99px) { 
+    /* ховер */
+    .accordion-item__input:hover ~ .accordion-item__content {
+        max-height: 0;
+    }
+    .accordion-item__trigger:hover ~ .accordion-item__content {
+        max-height: 0;
+    }
+    .accordion-item__input:hover ~ .accordion-item__trigger .arrow{
+        transform: rotate(0deg);
+    }
+    .accordion-item__trigger:hover ~ .accordion-item__content .arrow{
+        transform: rotate(0deg);
+        }
+    .accordion-item__content:hover img{
+            max-height: 0;
+        }
+    .accordion-item__content:hover{
+            max-height: 0;
+        }
+        .accordion-item__trigger:hover ~ .accordion-item__content img{
+            max-height: 0;
+        }
+        .accordion-item__input:hover ~ .accordion-item__content img{
+            max-height: 0;
+        }
+        .arrow{
+            display: block;
+        }
+    /* ------------ */
+    h2 {
+    font-size: 100%;
+    color: black;
+    }
+    h1 {
+    font-size: 100%;
+    }
+    img {
+        width: 15em;
+    }
+}
+@media (min-width:319px) and (max-width:819.99px){
+    .accordion-item__input:hover ~ .accordion-item__content {
+        max-height: 0;
+    }
+    .accordion-item__trigger:hover ~ .accordion-item__content {
+        max-height: 0;
+    }
+    .accordion-item__input:hover ~ .accordion-item__trigger .arrow{
+        transform: rotate(0deg);
+    }
+    .accordion-item__trigger:hover ~ .accordion-item__content .arrow{
+        transform: rotate(0deg);
+        }
+    .accordion-item__content:hover img{
+            max-height: 0;
+        }
+    .accordion-item__content:hover{
+            max-height: 0;
+        }
+        .accordion-item__trigger:hover ~ .accordion-item__content img{
+            max-height: 0;
+        }
+        .accordion-item__input:hover ~ .accordion-item__content img{
+            max-height: 0;
+        }
+        .arrow{
+            display: block;
+        }
+    h2 {
+    font-size: 60%;
+    color: black;
+    }
+    h1 {
+    font-size: 80%;
+    }
+    img {
+        width: 5em;
+        transition: 0.7s;
+    }
+    .accordion-item {
+        min-height: 3vh;
     }
 }
